@@ -1,6 +1,6 @@
 # QOI_FPGA_Accelerator
 
-A FPGA-based implementation of a QOI image compression hardware accelerator.
+An FPGA-based implementation of a QOI image compression hardware accelerator.
 
 ## Contents
 

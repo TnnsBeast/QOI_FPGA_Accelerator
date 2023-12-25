@@ -1,0 +1,143 @@
+# Reading pref.tcl
+vlog -reportprogress 300 -work work X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 14:14:24 on Dec 07,2023
+# vlog -reportprogress 300 -work work X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv 
+# -- Compiling module qoi2top
+# -- Compiling module encoder
+# -- Compiling module spi
+# -- Compiling module ram
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	qoi2top
+# 	tb
+# End time: 14:14:24 on Dec 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 14:14:36 on Dec 07,2023
+# //  ModelSim - Lattice FPGA Edition 2021.4 Oct 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.encoder
+# Loading work.ram
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'pixelsReady'. The port definition is at: X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/encoderInstance File: X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv Line: 673
+add wave -position insertpoint  \
+sim:/tb/ramInstance/WE \
+sim:/tb/ramInstance/spiRamWE \
+sim:/tb/ramInstance/spiRamOut \
+sim:/tb/ramInstance/spiRamIn \
+sim:/tb/ramInstance/spiRamAddress \
+sim:/tb/ramInstance/spiControllingRam \
+sim:/tb/ramInstance/output_memory \
+sim:/tb/ramInstance/memory \
+sim:/tb/ramInstance/encoderRamWE \
+sim:/tb/ramInstance/encoderRamOut \
+sim:/tb/ramInstance/encoderRamIn \
+sim:/tb/ramInstance/encoderRamAddress \
+sim:/tb/ramInstance/encoderControllingRam \
+sim:/tb/ramInstance/DO \
+sim:/tb/ramInstance/DI \
+sim:/tb/ramInstance/CS \
+sim:/tb/ramInstance/clk \
+sim:/tb/ramInstance/AD
+add wave -position insertpoint  \
+sim:/tb/encoderInstance/writeAddress \
+sim:/tb/encoderInstance/vrOutHelper \
+sim:/tb/encoderInstance/vrOut \
+sim:/tb/encoderInstance/vr \
+sim:/tb/encoderInstance/vgOutHelper2 \
+sim:/tb/encoderInstance/vgOutHelper \
+sim:/tb/encoderInstance/vgOut2 \
+sim:/tb/encoderInstance/vgOut \
+sim:/tb/encoderInstance/vg_rOutHelper \
+sim:/tb/encoderInstance/vg_rOut \
+sim:/tb/encoderInstance/vg_r \
+sim:/tb/encoderInstance/vg_bOutHelper \
+sim:/tb/encoderInstance/vg_bOut \
+sim:/tb/encoderInstance/vg_b \
+sim:/tb/encoderInstance/vg \
+sim:/tb/encoderInstance/vbOutHelper \
+sim:/tb/encoderInstance/vbOut \
+sim:/tb/encoderInstance/vb \
+sim:/tb/encoderInstance/state \
+sim:/tb/encoderInstance/runCountOutHelper \
+sim:/tb/encoderInstance/runCountOut \
+sim:/tb/encoderInstance/runCount \
+sim:/tb/encoderInstance/reset \
+sim:/tb/encoderInstance/readAddress \
+sim:/tb/encoderInstance/prevSeen \
+sim:/tb/encoderInstance/pixelsReady \
+sim:/tb/encoderInstance/nextstate \
+sim:/tb/encoderInstance/lastPixelRS \
+sim:/tb/encoderInstance/lastPixelR \
+sim:/tb/encoderInstance/lastPixelGS \
+sim:/tb/encoderInstance/lastPixelG \
+sim:/tb/encoderInstance/lastPixelBS \
+sim:/tb/encoderInstance/lastPixelB \
+sim:/tb/encoderInstance/lastPixelA \
+sim:/tb/encoderInstance/lastPixel \
+sim:/tb/encoderInstance/jumpBack \
+sim:/tb/encoderInstance/index \
+sim:/tb/encoderInstance/finalPixel \
+sim:/tb/encoderInstance/encoderRamWE \
+sim:/tb/encoderInstance/encoderRamOut \
+sim:/tb/encoderInstance/encoderRamIn \
+sim:/tb/encoderInstance/encoderRamAddress \
+sim:/tb/encoderInstance/encoderControllingRam \
+sim:/tb/encoderInstance/encodedByte \
+sim:/tb/encoderInstance/doneEncodingFinal \
+sim:/tb/encoderInstance/doneEncoding \
+sim:/tb/encoderInstance/curPixelRS \
+sim:/tb/encoderInstance/curPixelR \
+sim:/tb/encoderInstance/curPixelGS \
+sim:/tb/encoderInstance/curPixelG \
+sim:/tb/encoderInstance/curPixelBS \
+sim:/tb/encoderInstance/curPixelB \
+sim:/tb/encoderInstance/curPixelA \
+sim:/tb/encoderInstance/curPixel
+add wave -position insertpoint  \
+sim:/tb/encoderInstance/clk
+run 80000
+run 80000
+run 80000
+run 800000
+run 1000000
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run 800000
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"

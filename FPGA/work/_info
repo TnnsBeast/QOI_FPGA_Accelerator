@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11f vlog 2021.4 2021.10, Oct 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dX:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram
+vencoder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701987264
+!i10b 1
+!s100 ;a2DjL2d7VeES7VGMed793
+ISGA5nSDSj7H[ZSmM5jL9X1
+S1
+R0
+Z3 w1701987228
+Z4 8X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv
+Z5 FX:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv
+!i122 4
+L0 45 405
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OT;L;2021.4;73
+r1
+!s85 0
+31
+Z8 !s108 1701987264.000000
+!s107 X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv|
+Z9 !s90 -reportprogress|300|-work|work|X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv|
+!s101 -O0
+!i113 1
+Z10 o-work work -O0
+Z11 tCvgOpt 0
+vqoi2top
+R1
+R2
+!i10b 1
+!s100 _DmAR3fZWgLS]^QOZ>2[>0
+Io<@THTAMG[<8lm92MPb4e3
+S1
+R0
+R3
+R4
+R5
+!i122 4
+L0 9 34
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/source/impl_1/top.sv|
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+vram
+R1
+R2
+!i10b 1
+!s100 cmOM:Qzz08MM<HmkkHEg12
+IGoEf:=Loz@JYIEDNeUV[K1
+S1
+R0
+R3
+R4
+R5
+!i122 4
+L0 585 53
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+vspi
+R1
+R2
+!i10b 1
+!s100 DI<6ZehZdb6^n9SC6j94O1
+Io1C^TZhzk5Ukfo[5i8@Zf3
+S1
+R0
+R3
+R4
+R5
+!i122 4
+L0 452 131
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+vtb
+R1
+R2
+!i10b 1
+!s100 53ThNLN<2GS`iCi41PgQg1
+I9afIXS9Q369JUKFCT6l1I3
+S1
+R0
+R3
+R4
+R5
+!i122 4
+L0 640 36
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!s101 -O0
+!i113 1
+R10
+R11

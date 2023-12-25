@@ -1,0 +1,44 @@
+---------------------------------------------------
+Report for cell qoi2top
+   Instance path: qoi2top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       4390        100.0
+                               LUTGATE	       4220        100.0
+                                LUTCCU	        170        100.0
+                                 IOBUF	          4        100.0
+                                PFUREG	       2333        100.0
+                                   DSP	          4        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               encoder	          1        45.1
+                                   ram	          1         0.5
+                                   spi	          1         1.8
+---------------------------------------------------
+Report for cell spi
+   Instance path: qoi2top/spiInstance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         81         1.8
+                               LUTGATE	         49         1.2
+                                LUTCCU	         32        18.8
+                                 IOBUF	          1        25.0
+                                PFUREG	         98         4.2
+---------------------------------------------------
+Report for cell encoder
+   Instance path: qoi2top/encoderInstance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1981        45.1
+                               LUTGATE	       1843        43.7
+                                LUTCCU	        138        81.2
+                                PFUREG	       2194        94.0
+                                   DSP	          4        100.0
+---------------------------------------------------
+Report for cell ram
+   Instance path: qoi2top/ramInstance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.5
+                               LUTGATE	         24         0.6
+                                PFUREG	         39         1.7

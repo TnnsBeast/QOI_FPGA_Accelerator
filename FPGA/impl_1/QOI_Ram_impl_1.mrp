@@ -1,0 +1,404 @@
+                         Lattice Mapping Report File
+Design:  qoi2top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Sun Dec  3 13:40:13 2023
+
+Design Information
+------------------
+
+Command line:   map -i QOI_Ram_impl_1_syn.udb -pdc X:/Documents/Polarbear/Colleg
+     e/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/top.pdc -o
+     QOI_Ram_impl_1_map.udb -mp QOI_Ram_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 2333 out of  5280 (44%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           4390 out of  5280 (83%)
+      Number of logic LUT4s:             2031
+      Number of inserted feedthru LUT4s: 2188
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             85 (170 LUT4s)
+   Number of IO sites used:   4 out of 39 (10%)
+      Number of IO sites used for general PIO: 4
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 4 out of 36 (11%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 4 out of 39 (10%)
+   Number of DSPs:             4 out of 8 (50%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            1 out of 4 (25%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  3
+      Net sck_c: 92 loads, 49 rising, 43 falling (Driver: Port sck)
+      Net new_clk[1]: 2181 loads, 2181 rising, 0 falling (Driver: Pin
+     new_clk_1__I_0/Q)
+      Net high_clk: 42 loads, 40 rising, 2 falling (Driver: Pin hf_osc/CLKHF)
+   Number of Clock Enables:  96
+      Net VCC_net: 5 loads, 0 SLICEs
+      Net dataOut_0__N_171: 8 loads, 8 SLICEs
+      Net spiInstance.tempInfoCode_0__N_156: 16 loads, 16 SLICEs
+      Net spiInstance.tempDataOut_0__N_180: 8 loads, 8 SLICEs
+      Net spiInstance.spiRamWE_N_784: 1 loads, 1 SLICEs
+      Net spiInstance.sdo_c_N_781: 1 loads, 1 SLICEs
+      Net dataIn_0__N_139: 32 loads, 32 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net spiRamIn_0__N_16: 8 loads, 8 SLICEs
+      Net n9008: 32 loads, 32 SLICEs
+      Net n8816: 32 loads, 32 SLICEs
+      Net n8752: 32 loads, 32 SLICEs
+      Net n8688: 32 loads, 32 SLICEs
+      Net n8624: 32 loads, 32 SLICEs
+      Net n8560: 32 loads, 32 SLICEs
+      Net n8496: 32 loads, 32 SLICEs
+      Net n8432: 32 loads, 32 SLICEs
+      Net n8368: 32 loads, 32 SLICEs
+      Net n8304: 32 loads, 32 SLICEs
+      Net n8240: 32 loads, 32 SLICEs
+      Net n8176: 32 loads, 32 SLICEs
+      Net n8112: 32 loads, 32 SLICEs
+      Net n8044: 32 loads, 32 SLICEs
+      Net n7936: 32 loads, 32 SLICEs
+      Net n7920: 32 loads, 32 SLICEs
+      Net n7794: 32 loads, 32 SLICEs
+      Net n7764: 32 loads, 32 SLICEs
+      Net n7694: 32 loads, 32 SLICEs
+      Net n7664: 32 loads, 32 SLICEs
+      Net n7600: 32 loads, 32 SLICEs
+      Net n6909: 32 loads, 32 SLICEs
+      Net n7091: 32 loads, 32 SLICEs
+      Net n6961: 32 loads, 32 SLICEs
+      Net n7025: 32 loads, 32 SLICEs
+      Net n7081: 32 loads, 32 SLICEs
+      Net n7159: 32 loads, 32 SLICEs
+      Net n7191: 32 loads, 32 SLICEs
+      Net n7310: 32 loads, 32 SLICEs
+      Net n7412: 32 loads, 32 SLICEs
+      Net n7183: 32 loads, 32 SLICEs
+      Net n7155: 32 loads, 32 SLICEs
+      Net encoderInstance.doneEncoding_N_787: 1 loads, 1 SLICEs
+      Net encoderInstance.encoderControllingRam_N_789: 1 loads, 1 SLICEs
+      Net encoderInstance.doneEncoding_N_795: 1 loads, 1 SLICEs
+      Net encoderInstance.finalPixel_N_796: 1 loads, 1 SLICEs
+      Net encoderInstance.curPixel_0__N_276: 8 loads, 8 SLICEs
+      Net encoderInstance.n7109: 32 loads, 32 SLICEs
+      Net encoderInstance.encoderRamAddress_0__N_83: 14 loads, 14 SLICEs
+      Net encoderInstance.encoderRamWE_N_791: 1 loads, 1 SLICEs
+      Net encoderInstance.encoderRamIn_0__N_54: 8 loads, 8 SLICEs
+      Net encoderInstance.lastPixel_0__N_243: 32 loads, 32 SLICEs
+      Net encoderInstance.writeAddress_0__N_699: 8 loads, 8 SLICEs
+      Net encoderInstance.encodedByte_0__N_359: 8 loads, 8 SLICEs
+      Net encoderInstance.jumpBack_3__N_729: 1 loads, 1 SLICEs
+      Net encoderInstance.jumpBack_1__N_734: 3 loads, 3 SLICEs
+      Net encoderInstance.runCount_0__N_293: 4 loads, 4 SLICEs
+      Net encoderInstance.readAddress_0__N_657: 8 loads, 8 SLICEs
+      Net encoderInstance.state_2__N_701: 1 loads, 1 SLICEs
+      Net encoderInstance.state_1__N_702: 1 loads, 1 SLICEs
+      Net encoderInstance.curPixel_16__N_260: 8 loads, 8 SLICEs
+      Net encoderInstance.curPixel_8__N_268: 8 loads, 8 SLICEs
+      Net encoderInstance.jumpBack_4__N_727: 1 loads, 1 SLICEs
+      Net encoderInstance.writeAddress_1__N_696: 1 loads, 1 SLICEs
+      Net encoderInstance.curPixel_24__N_252: 8 loads, 8 SLICEs
+      Net encoderInstance.n10864: 32 loads, 32 SLICEs
+
+                                    Page 2
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net encoderInstance.n10800: 32 loads, 32 SLICEs
+      Net encoderInstance.n10736: 32 loads, 32 SLICEs
+      Net encoderInstance.n10672: 32 loads, 32 SLICEs
+      Net encoderInstance.n10608: 32 loads, 32 SLICEs
+      Net encoderInstance.n10544: 32 loads, 32 SLICEs
+      Net encoderInstance.n10480: 32 loads, 32 SLICEs
+      Net encoderInstance.n10416: 32 loads, 32 SLICEs
+      Net encoderInstance.n10352: 32 loads, 32 SLICEs
+      Net encoderInstance.n10288: 32 loads, 32 SLICEs
+      Net encoderInstance.n10224: 32 loads, 32 SLICEs
+      Net encoderInstance.n10160: 32 loads, 32 SLICEs
+      Net encoderInstance.n10096: 32 loads, 32 SLICEs
+      Net encoderInstance.n10032: 32 loads, 32 SLICEs
+      Net encoderInstance.n9968: 32 loads, 32 SLICEs
+      Net encoderInstance.n9904: 32 loads, 32 SLICEs
+      Net encoderInstance.n9840: 32 loads, 32 SLICEs
+      Net encoderInstance.n9776: 32 loads, 32 SLICEs
+      Net encoderInstance.n9712: 32 loads, 32 SLICEs
+      Net encoderInstance.n9648: 32 loads, 32 SLICEs
+      Net encoderInstance.n9570: 32 loads, 32 SLICEs
+      Net encoderInstance.n9520: 32 loads, 32 SLICEs
+      Net encoderInstance.n9456: 32 loads, 32 SLICEs
+      Net encoderInstance.n9392: 32 loads, 32 SLICEs
+      Net encoderInstance.n9328: 32 loads, 32 SLICEs
+      Net encoderInstance.n9264: 32 loads, 32 SLICEs
+      Net encoderInstance.n9200: 32 loads, 32 SLICEs
+      Net encoderInstance.n9136: 32 loads, 32 SLICEs
+      Net encoderInstance.n9072: 32 loads, 32 SLICEs
+      Net encoderInstance.n8944: 32 loads, 32 SLICEs
+      Net encoderInstance.n8880: 32 loads, 32 SLICEs
+      Net ramInstance.WE_N_798: 23 loads, 23 SLICEs
+      Net ramInstance.WE: 1 loads, 0 SLICEs
+   Number of LSRs:  78
+      Pin reset: 68 loads, 68 SLICEs (Net: reset_c)
+      Net spiInstance.spiRamWE_N_785: 1 loads, 1 SLICEs
+      Net spiInstance.spiOutCounter_0__N_108: 6 loads, 6 SLICEs
+      Net n12704: 32 loads, 32 SLICEs
+      Net n12605: 32 loads, 32 SLICEs
+      Net n12572: 32 loads, 32 SLICEs
+      Net n12539: 32 loads, 32 SLICEs
+      Net n12506: 32 loads, 32 SLICEs
+      Net n12473: 32 loads, 32 SLICEs
+      Net n12440: 32 loads, 32 SLICEs
+      Net n12407: 32 loads, 32 SLICEs
+      Net n12374: 32 loads, 32 SLICEs
+      Net n12341: 32 loads, 32 SLICEs
+      Net n12308: 32 loads, 32 SLICEs
+      Net n12275: 32 loads, 32 SLICEs
+      Net n12242: 32 loads, 32 SLICEs
+      Net n12209: 32 loads, 32 SLICEs
+      Net n12176: 32 loads, 32 SLICEs
+      Net n12143: 32 loads, 32 SLICEs
+      Net n12110: 32 loads, 32 SLICEs
+      Net n12077: 32 loads, 32 SLICEs
+      Net n12044: 32 loads, 32 SLICEs
+      Net n12011: 32 loads, 32 SLICEs
+      Net n11978: 32 loads, 32 SLICEs
+
+                                    Page 3
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net n11571: 32 loads, 32 SLICEs
+      Net n11576: 32 loads, 32 SLICEs
+      Net n11600: 32 loads, 32 SLICEs
+      Net n11688: 32 loads, 32 SLICEs
+      Net n11645: 32 loads, 32 SLICEs
+      Net n11585: 32 loads, 32 SLICEs
+      Net n11789: 32 loads, 32 SLICEs
+      Net n11839: 32 loads, 32 SLICEs
+      Net n11880: 32 loads, 32 SLICEs
+      Net n11763: 32 loads, 32 SLICEs
+      Net n11596: 32 loads, 32 SLICEs
+      Net encoderInstance.n11605: 32 loads, 32 SLICEs
+      Net encoderInstance.encoderRamWE_N_792: 1 loads, 1 SLICEs
+      Net encoderInstance.encoderRamIn_0__N_55: 1 loads, 1 SLICEs
+      Net encoderInstance.encodedByte_0__N_360: 8 loads, 8 SLICEs
+      Net encoderInstance.jumpBack_3__N_730: 1 loads, 1 SLICEs
+      Net encoderInstance.jumpBack_5__N_725: 1 loads, 1 SLICEs
+      Net encoderInstance.writeAddress_0__N_700: 8 loads, 8 SLICEs
+      Net encoderInstance.lastPixel_0__N_244: 32 loads, 32 SLICEs
+      Net encoderInstance.writeAddress_1__N_697: 1 loads, 1 SLICEs
+      Net encoderInstance.encoderRamIn_1__N_52: 7 loads, 7 SLICEs
+      Net encoderInstance.readAddress_0__N_658: 8 loads, 8 SLICEs
+      Net encoderInstance.runCount_0__N_294: 4 loads, 4 SLICEs
+      Net encoderInstance.n13661: 32 loads, 32 SLICEs
+      Net encoderInstance.n13628: 32 loads, 32 SLICEs
+      Net encoderInstance.n13595: 32 loads, 32 SLICEs
+      Net encoderInstance.n13562: 32 loads, 32 SLICEs
+      Net encoderInstance.n13529: 32 loads, 32 SLICEs
+      Net encoderInstance.n13496: 32 loads, 32 SLICEs
+      Net encoderInstance.n13463: 32 loads, 32 SLICEs
+      Net encoderInstance.n13430: 32 loads, 32 SLICEs
+      Net encoderInstance.n13397: 32 loads, 32 SLICEs
+      Net encoderInstance.n13364: 32 loads, 32 SLICEs
+      Net encoderInstance.n13331: 32 loads, 32 SLICEs
+      Net encoderInstance.n13298: 32 loads, 32 SLICEs
+      Net encoderInstance.n13265: 32 loads, 32 SLICEs
+      Net encoderInstance.n13232: 32 loads, 32 SLICEs
+      Net encoderInstance.n13199: 32 loads, 32 SLICEs
+      Net encoderInstance.n13166: 32 loads, 32 SLICEs
+      Net encoderInstance.n13133: 32 loads, 32 SLICEs
+      Net encoderInstance.n13100: 32 loads, 32 SLICEs
+      Net encoderInstance.n13067: 32 loads, 32 SLICEs
+      Net encoderInstance.n13034: 32 loads, 32 SLICEs
+      Net encoderInstance.n13001: 32 loads, 32 SLICEs
+      Net encoderInstance.n12968: 32 loads, 32 SLICEs
+      Net encoderInstance.n12935: 32 loads, 32 SLICEs
+      Net encoderInstance.n12902: 32 loads, 32 SLICEs
+      Net encoderInstance.n12869: 32 loads, 32 SLICEs
+      Net encoderInstance.n12836: 32 loads, 32 SLICEs
+      Net encoderInstance.n12803: 32 loads, 32 SLICEs
+      Net encoderInstance.n12770: 32 loads, 32 SLICEs
+      Net encoderInstance.n12737: 32 loads, 32 SLICEs
+      Net encoderInstance.n12671: 32 loads, 32 SLICEs
+      Net encoderInstance.n12638: 32 loads, 32 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net encoderInstance.index[1]_2: 1017 loads
+      Net index[0]: 532 loads
+
+                                    Page 4
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net index[3]: 263 loads
+      Net index[5]: 191 loads
+      Net index[4]: 163 loads
+      Net index[2]: 162 loads
+      Net n21652: 128 loads
+      Net encoderInstance.state[0]: 118 loads
+      Net encoderInstance.state[2]: 109 loads
+      Net encoderInstance.state[1]: 106 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sdi                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sck                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sdo                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i4_1_lut was optimized away.
+Block encoderInstance/index_2__I_0_lut_buf_1 was optimized away.
+Block encoderInstance/index_2__I_0_lut_buf_2 was optimized away.
+Block i116_1_lut was optimized away.
+Block i1 was optimized away.
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            hf_osc
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     high_clk
+  DIV Setting:                                  00
+
+
+
+
+                                    Page 5
+
+
+
+
+
+ASIC Components
+---------------
+
+Instance Name: encoderInstance/mult_15
+         Type: DSP
+Instance Name: encoderInstance/mult_16
+         Type: DSP
+Instance Name: encoderInstance/mult_18
+         Type: DSP
+Instance Name: encoderInstance/mult_20
+         Type: DSP
+Instance Name: ramInstance/ram
+         Type: SRAM
+Instance Name: hf_osc
+         Type: HFOSC
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 5
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs
+   Total REAL Time: 3 secs
+   Peak Memory Usage: 141 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.

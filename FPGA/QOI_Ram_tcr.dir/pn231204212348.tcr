@@ -1,0 +1,8 @@
+#Start recording tcl command: 12/3/2023 13:32:37
+#Project Location: X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram; Project name: QOI_Ram
+prj_open "X:/Documents/Polarbear/College/Classes/Engineering/MicroPs/FinalProject/FPGA/QOI_Ram/QOI_Ram.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/4/2023 21:23:48
